@@ -1,0 +1,569 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lima 21 · Restaurante peruano en Galapagar</title>
+<meta name="description" content="Lima 21, cafetería y restaurante peruano en el centro de Galapagar: ceviches, pollo a la brasa, lomo saltado, causa limeña y tarta tres leches. Pide para llevar o reserva por WhatsApp.">
+<meta property="og:title" content="Lima 21 · Restaurante peruano en Galapagar">
+<meta property="og:description" content="Ceviche, pollo a la brasa y cocina peruana de verdad en Galapagar. Mira la carta y pide por WhatsApp.">
+<meta property="og:image" content="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvFJCvhlv_KB1gbSgfO-NkLt0P6iqIfCzMeKIEmtil1NpBJ4K2LrdaxuYgvCfOSXY9MBmtW6p3-SZf7vNeqJuOXynF2YIfDWoeGBQCM4RqSw8Ey4dLDAJCFAiL0Ie57HblhokdKnNECf8t=w1200-h630-k-no">
+<meta name="theme-color" content="#161212">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔥</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kalam:wght@700&family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf6ef;--bg2:#f3e9dc;--card:#fffdf9;--ink:#1d1715;--muted:#6e6158;--line:#e8dccb;--red:#d7261e;--red-d:#a8180f;--ember:#f2711c;--gold:#f5b324;--coal:#161212;--coal2:#221b19;--smoke:#f4ece2;--wa:#1faa59;--fh:'Bebas Neue',Impact,sans-serif;--fc:'Kalam',cursive;--fb:'Barlow',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit}
+button{font:inherit;color:inherit}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+section{padding:90px 0;position:relative}
+h1,h2,h3{font-family:var(--fh);font-weight:400;line-height:.95;letter-spacing:.01em}
+.kicker{display:inline-block;font-family:var(--fc);font-size:1.35rem;color:var(--red);line-height:1;margin-bottom:10px;transform:rotate(-2deg)}
+.sec-title{font-size:clamp(2.8rem,7vw,4.6rem);margin-bottom:12px}
+.sec-sub{color:var(--muted);max-width:620px;margin-bottom:36px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:15px 24px;border-radius:999px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font-size:1rem;transition:transform .15s,background .2s}
+.btn:active{transform:scale(.97)}
+.btn svg{width:20px;height:20px;flex:none}
+.btn-wa{background:var(--wa);color:#fff;box-shadow:0 12px 28px -12px var(--wa)}
+.btn-wa:hover{background:#178f4a}
+.btn-red{background:var(--red);color:#fff}
+.btn-red:hover{background:var(--red-d)}
+.btn-ghost{border-color:rgba(255,255,255,.4);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.pe{display:inline-flex;height:11px;width:30px;border-radius:2px;overflow:hidden;vertical-align:middle}
+.pe i{flex:1;background:var(--red)}.pe i:nth-child(2){background:#fff}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:60;background:rgba(22,18,18,.94);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;line-height:1}
+.brand .fl{width:30px;height:36px}
+.brand b{display:block;font-family:var(--fh);font-weight:400;font-size:2rem;letter-spacing:.04em}
+.brand b em{font-style:normal;color:var(--red)}
+.brand small{display:flex;align-items:center;gap:6px;font-size:.62rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.65);font-weight:700;margin-top:1px}
+.links{display:flex;align-items:center;gap:24px;list-style:none}
+.links a{text-decoration:none;font-weight:600;font-size:.95rem;color:rgba(255,255,255,.88)}
+.links a:hover{color:var(--gold)}
+.links .cta{background:var(--wa);color:#fff;padding:10px 16px;border-radius:999px;display:inline-flex;gap:8px;align-items:center}
+.links .cta svg{width:18px;height:18px}
+.burger{display:none;width:44px;height:44px;border-radius:12px;border:1.5px solid rgba(255,255,255,.5);background:transparent;cursor:pointer;flex:none}
+.burger span,.burger span::before,.burger span::after{display:block;width:20px;height:2px;background:#fff;margin:auto;position:relative;transition:transform .25s,background .25s}
+.burger span::before,.burger span::after{content:"";position:absolute;left:0}
+.burger span::before{top:-6px}.burger span::after{top:6px}
+.burger[aria-expanded="true"] span{background:transparent}
+.burger[aria-expanded="true"] span::before{transform:translateY(6px) rotate(45deg)}
+.burger[aria-expanded="true"] span::after{transform:translateY(-6px) rotate(-45deg)}
+.nav-wa{display:none}
+
+/* HERO */
+.hero{background:var(--coal);color:#fff;padding:0;overflow:hidden;isolation:isolate}
+.hero .bgimg{position:absolute;inset:0;z-index:-2}
+.hero .bgimg img{width:100%;height:100%;object-fit:cover;opacity:.42;transform:scale(1.05)}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(22,18,18,.97) 0%,rgba(22,18,18,.82) 45%,rgba(22,18,18,.35) 100%),linear-gradient(0deg,rgba(22,18,18,1) 0%,transparent 35%)}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:min(86vh,760px);padding-top:50px;padding-bottom:70px}
+.status{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:999px;font-size:.85rem;font-weight:700;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.16);margin-bottom:22px}
+.status i{width:9px;height:9px;border-radius:50%;background:#999}
+.status.open i{background:#2fbf6b;animation:pulse 2s infinite}
+.status.closed i{background:var(--red)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(47,191,107,.55)}70%{box-shadow:0 0 0 10px rgba(47,191,107,0)}100%{box-shadow:0 0 0 0 rgba(47,191,107,0)}}
+.hero h1{font-size:clamp(4.6rem,15vw,9.5rem);line-height:.82;letter-spacing:.02em}
+.hero h1 em{font-style:normal;color:var(--red);position:relative}
+.hero h1 .hand{display:block;font-family:var(--fc);font-size:.26em;letter-spacing:0;line-height:1.1;color:var(--gold);margin:14px 0 0 4px;transform:rotate(-2deg)}
+.hero .lede{font-size:1.15rem;color:rgba(255,255,255,.78);max-width:520px;margin:22px 0 28px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+.rate{display:flex;align-items:center;gap:10px;flex-wrap:wrap;font-size:.92rem;color:rgba(255,255,255,.7)}
+.rate b{color:#fff;font-size:1.15rem}
+.stars{color:var(--gold);letter-spacing:2px}
+.g-logo{width:20px;height:20px;flex:none}
+.hero-art{position:relative;justify-self:end;width:100%;max-width:440px;aspect-ratio:1}
+.plate{position:absolute;inset:6%;border-radius:50%;overflow:hidden;box-shadow:0 0 0 10px rgba(255,255,255,.06),0 0 0 22px rgba(255,255,255,.03),0 40px 80px -20px rgba(0,0,0,.8)}
+.plate img{width:100%;height:100%;object-fit:cover;transition:opacity .6s}
+.plate-tag{position:absolute;left:-4%;bottom:12%;background:var(--red);color:#fff;font-family:var(--fh);font-size:1.6rem;letter-spacing:.04em;padding:10px 18px 6px;border-radius:6px;transform:rotate(-5deg);box-shadow:0 14px 30px -12px rgba(0,0,0,.6)}
+.plate-tag small{display:block;font-family:var(--fb);font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;opacity:.85}
+.plate-dots{position:absolute;right:2%;top:8%;display:flex;flex-direction:column;gap:8px}
+.plate-dots button{width:12px;height:12px;border-radius:50%;border:0;background:rgba(255,255,255,.3);cursor:pointer;padding:0}
+.plate-dots button.on{background:var(--gold)}
+.flames{position:absolute;bottom:-2px;left:0;right:0;height:46px;z-index:1;color:var(--bg)}
+.feria{background:var(--gold);color:var(--coal);font-weight:700;font-size:.95rem;text-align:center;padding:12px 20px}
+.feria b{font-family:var(--fh);font-weight:400;font-size:1.35rem;letter-spacing:.03em;margin-right:6px}
+
+/* FAVORITOS */
+.favs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.fav{position:relative;border-radius:22px;overflow:hidden;aspect-ratio:3/4;background:var(--coal);color:#fff;isolation:isolate}
+.fav img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-2;transition:transform .7s}
+.fav:hover img{transform:scale(1.06)}
+.fav::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,transparent 35%,rgba(22,18,18,.92))}
+.fav .tx{position:absolute;left:18px;right:18px;bottom:16px}
+.fav h3{font-size:2rem;letter-spacing:.02em}
+.fav p{font-size:.88rem;color:rgba(255,255,255,.8);line-height:1.35}
+.fav .pr{position:absolute;top:14px;right:14px;background:var(--red);font-family:var(--fh);font-size:1.4rem;padding:4px 12px 1px;border-radius:999px}
+.fav q{display:block;font-family:var(--fc);font-size:1rem;color:var(--gold);margin-top:6px;line-height:1.2}
+
+/* CARTA */
+.sec-carta{background:var(--coal);color:var(--smoke)}
+.sec-carta .sec-sub{color:rgba(244,236,226,.7)}
+.sec-carta .kicker{color:var(--gold)}
+.tabs{display:flex;gap:8px;overflow-x:auto;scrollbar-width:none;padding-bottom:6px;margin-bottom:22px;-webkit-mask:linear-gradient(90deg,#000 88%,transparent)}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:none;padding:10px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.18);background:transparent;color:var(--smoke);font-weight:700;font-size:.92rem;cursor:pointer;white-space:nowrap}
+.tab.on{background:var(--red);border-color:var(--red);color:#fff}
+.tab small{font-weight:600;opacity:.7;margin-left:4px}
+.menu-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px 28px}
+.it{display:grid;grid-template-columns:1fr auto auto;gap:12px;align-items:center;padding:14px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.it h4{font-family:var(--fh);font-weight:400;font-size:1.55rem;letter-spacing:.03em;line-height:1}
+.it p{font-size:.86rem;color:rgba(244,236,226,.62);line-height:1.35;margin-top:3px}
+.it .pr{font-family:var(--fh);font-size:1.5rem;color:var(--gold);white-space:nowrap}
+.it .add{width:40px;height:40px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:1.4rem;font-weight:700;cursor:pointer;display:grid;place-items:center;transition:background .2s,transform .15s}
+.it .add:hover{background:var(--red)}
+.it .add:active{transform:scale(.9)}
+.it.inq .add{background:var(--red)}
+.it .ctl{display:flex;gap:6px;align-items:center}
+.it .sub{width:34px;height:34px;border-radius:50%;border:0;background:rgba(255,255,255,.1);color:#fff;font-size:1.2rem;font-weight:700;cursor:pointer;display:grid;place-items:center}
+.it:not(.inq) .sub{display:none}
+.it .q{display:none;font-size:.78rem;font-weight:800;background:var(--gold);color:var(--coal);border-radius:999px;padding:1px 8px;margin-left:8px;vertical-align:middle;font-family:var(--fb)}
+.it.inq .q{display:inline-block}
+.menu-note{margin-top:18px;font-size:.85rem;color:rgba(244,236,226,.55)}
+.order{position:sticky;bottom:14px;z-index:20;margin-top:26px;background:var(--card);color:var(--ink);border-radius:20px;padding:16px 18px;display:grid;grid-template-columns:1fr auto;gap:14px;align-items:center;box-shadow:0 24px 50px -20px rgba(0,0,0,.7);transform:translateY(0);transition:transform .3s,opacity .3s}
+.order.empty{opacity:.96}
+.order h3{font-size:1.7rem;letter-spacing:.02em}
+.order small{display:block;color:var(--muted);font-size:.86rem;line-height:1.35}
+.order .acts{display:flex;gap:8px;align-items:center;flex-wrap:wrap;justify-content:flex-end}
+.order .mode{display:flex;border:1.5px solid var(--line);border-radius:999px;padding:3px}
+.order .mode label{padding:7px 12px;border-radius:999px;font-size:.85rem;font-weight:700;cursor:pointer;color:var(--muted)}
+.order .mode label:has(input:checked){background:var(--coal);color:#fff}
+.order .mode input{position:absolute;opacity:0;pointer-events:none}
+.order .clr{border:0;background:none;color:var(--muted);text-decoration:underline;cursor:pointer;font-size:.85rem}
+.order .btn-wa[aria-disabled="true"]{opacity:.45;pointer-events:none;box-shadow:none}
+
+/* CASA */
+.casa{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;align-items:stretch}
+.casa .big{border-radius:24px;overflow:hidden;min-height:420px;position:relative}
+.casa .big img{width:100%;height:100%;object-fit:cover}
+.casa .big span{position:absolute;left:16px;bottom:16px;background:rgba(22,18,18,.82);color:#fff;font-family:var(--fc);font-size:1.15rem;padding:6px 14px;border-radius:12px}
+.casa .side{display:grid;grid-template-rows:auto 1fr;gap:18px}
+.casa .note{background:var(--card);border:1px solid var(--line);border-radius:24px;padding:26px}
+.casa .note h3{font-size:2.2rem;margin-bottom:8px}
+.casa .note p{color:var(--muted)}
+.casa .note ul{list-style:none;margin-top:14px;display:grid;gap:10px}
+.casa .note li{display:flex;gap:10px;align-items:flex-start;font-weight:600}
+.casa .note li span{font-size:1.2rem}
+.casa .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.casa .two div{border-radius:20px;overflow:hidden;min-height:170px}
+.casa .two img{width:100%;height:100%;object-fit:cover}
+
+/* GALERÍA */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:190px;gap:10px}
+.gal button{border:0;padding:0;border-radius:16px;overflow:hidden;cursor:zoom-in;background:var(--bg2)}
+.gal button:nth-child(1){grid-column:span 2;grid-row:span 2}
+.gal button:nth-child(6){grid-column:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal button:hover img{transform:scale(1.05)}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,10,10,.94);display:none;align-items:center;justify-content:center;padding:20px}
+.lb.on{display:flex}
+.lb img{max-height:84vh;max-width:100%;border-radius:12px}
+.lb button{position:absolute;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.14);color:#fff;font-size:1.5rem;cursor:pointer}
+.lb .x{top:16px;right:16px}.lb .pv{left:12px;top:50%}.lb .nx{right:12px;top:50%}
+
+/* RESEÑAS */
+.sec-rev{background:var(--bg2)}
+.rv-head{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;margin-bottom:20px}
+.rv-score{display:flex;align-items:center;gap:14px}
+.rv-score b{font-family:var(--fh);font-weight:400;font-size:3.6rem;line-height:1}
+.rv-score small{display:block;color:var(--muted)}
+.rv-chips{display:flex;gap:8px;flex-wrap:wrap}
+.chip{padding:8px 14px;border-radius:999px;border:1.5px solid var(--line);background:var(--card);font-weight:700;font-size:.88rem;cursor:pointer}
+.chip.on{background:var(--coal);border-color:var(--coal);color:#fff}
+.rv-track{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px 2px 10px;cursor:grab}
+.rv-track::-webkit-scrollbar{display:none}
+.rv{flex:0 0 min(340px,84%);scroll-snap-align:start;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+.rv.hide{display:none}
+.rv-top{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.rv-top div{flex:1;min-width:0}
+.rv-top strong{display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.rv-top small{color:var(--muted)}
+.av{width:40px;height:40px;border-radius:50%;display:grid;place-items:center;font-weight:800;color:#fff;flex:none}
+.rv .stars{display:block;margin-bottom:8px}
+.rv p{font-size:.98rem;display:-webkit-box;-webkit-line-clamp:5;-webkit-box-orient:vertical;overflow:hidden}
+.rv.open p{-webkit-line-clamp:unset}
+.rv .more{background:none;border:0;color:var(--red);font-weight:700;margin-top:8px;cursor:pointer;font-size:.9rem}
+.rv-nav{display:flex;align-items:center;justify-content:space-between;margin-top:14px}
+.dots{display:flex;gap:6px;flex-wrap:wrap}
+.dots i{width:8px;height:8px;border-radius:50%;background:rgba(0,0,0,.18);transition:width .25s}
+.dots i.on{background:var(--red);width:22px;border-radius:5px}
+.arrows{display:flex;gap:8px}
+.arrows button{width:44px;height:44px;border-radius:50%;border:1.5px solid var(--line);background:var(--card);cursor:pointer;font-size:1.2rem}
+.rv-links{display:flex;gap:16px;flex-wrap:wrap;margin-top:22px;font-weight:700;font-size:.92rem}
+.rv-links a{color:var(--red)}
+
+/* INFO */
+.info-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:28px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px}
+.hours{width:100%;border-collapse:collapse;font-size:.98rem}
+.hours td{padding:10px 0;border-bottom:1px dashed var(--line)}
+.hours td:last-child{text-align:right;font-weight:600}
+.hours tr.today td{color:var(--red);font-weight:800}
+.hours tr.off td:last-child{color:var(--muted)}
+.contact-list{list-style:none;display:grid;gap:14px;margin:4px 0 20px}
+.contact-list li{display:flex;gap:12px;align-items:flex-start}
+.contact-list .ic{width:42px;height:42px;border-radius:12px;background:var(--bg2);display:grid;place-items:center;flex:none;font-size:1.15rem}
+.contact-list small{display:block;color:var(--muted);font-size:.8rem}
+.contact-list a{font-weight:700;text-decoration:none}
+.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);height:240px;background:var(--bg2)}
+.map iframe{width:100%;height:100%;border:0}
+
+/* CTA + FOOTER */
+.cta-band{background:var(--red);color:#fff;text-align:center;padding:80px 0;overflow:hidden}
+.cta-band h2{font-size:clamp(3rem,8vw,5.2rem);margin-bottom:8px}
+.cta-band .hand{font-family:var(--fc);font-size:1.5rem;color:#ffe1a1;display:block;margin-bottom:26px}
+.cta-band .ctas{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.cta-band .btn-white{background:#fff;color:var(--red)}
+footer{background:var(--coal);color:rgba(244,236,226,.6);padding:28px 0 100px;font-size:.85rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:var(--smoke)}
+
+.fab{position:fixed;right:16px;bottom:16px;z-index:65;width:60px;height:60px;border-radius:50%;background:var(--wa);color:#fff;display:grid;place-items:center;box-shadow:0 14px 30px -10px rgba(0,0,0,.45)}
+.fab.off{opacity:0;pointer-events:none;transform:scale(.6)}
+.fab{transition:opacity .25s,transform .25s}
+.fab svg{width:30px;height:30px}
+
+.rv-in{opacity:0;transform:translateY(22px);transition:opacity .7s,transform .7s}
+.rv-in.vis{opacity:1;transform:none}
+
+@media (max-width:980px){
+ .favs{grid-template-columns:1fr 1fr}
+ .menu-grid{grid-template-columns:1fr}
+}
+@media (max-width:900px){
+ .hero .wrap{grid-template-columns:1fr;gap:34px;min-height:0;padding-top:34px}
+ .hero-art{justify-self:center;max-width:340px}
+ .casa,.info-grid{grid-template-columns:1fr}
+ .casa .big{min-height:300px}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:150px}
+ .gal button:nth-child(6){grid-column:auto}
+ .order{grid-template-columns:1fr}
+ .order .acts{justify-content:space-between}
+}
+@media (max-width:820px){
+ .burger{display:block}
+ .nav-wa{display:grid;place-items:center;width:44px;height:44px;border-radius:12px;background:var(--wa);color:#fff;margin-left:auto}
+ .nav-wa svg{width:22px;height:22px}
+ .links{position:absolute;top:68px;left:0;right:0;flex-direction:column;align-items:stretch;gap:0;background:var(--coal);padding:6px 20px 18px;box-shadow:0 20px 30px -12px rgba(0,0,0,.5);display:none}
+ .links.open{display:flex}
+ .links li a{display:block;padding:14px 2px;border-bottom:1px dashed rgba(255,255,255,.14);font-family:var(--fh);font-weight:400;font-size:1.9rem;letter-spacing:.03em}
+ .links li:last-child a{border:0}
+ .links .cta{margin-top:12px;justify-content:center;font-family:var(--fb)!important;font-size:1rem!important;font-weight:700!important}
+ section{padding:66px 0}
+}
+@media (max-width:520px){
+ .favs{grid-template-columns:1fr 1fr;gap:10px}
+ .fav h3{font-size:1.5rem}
+ .fav p{display:none}
+ .fav .pr{font-size:1.1rem;top:10px;right:10px}
+ .it h4{font-size:1.35rem}
+ .plate-tag{font-size:1.3rem}
+ .casa .two{grid-template-columns:1fr 1fr;gap:10px}
+ .order .acts .btn{flex:1}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv-in{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="wa" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></symbol>
+ <symbol id="glogo" viewBox="0 0 48 48"><path fill="#FFC107" d="M43.6 20.1H42V20H24v8h11.3c-1.6 4.7-6.1 8-11.3 8-6.6 0-12-5.4-12-12s5.4-12 12-12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 12.9 4 4 12.9 4 24s8.9 20 20 20 20-8.9 20-20c0-1.3-.1-2.6-.4-3.9z"/><path fill="#FF3D00" d="m6.3 14.7 6.6 4.8C14.7 15.1 19 12 24 12c3.1 0 5.8 1.2 7.9 3.1l5.7-5.7C34 6.1 29.3 4 24 4 16.3 4 9.7 8.3 6.3 14.7z"/><path fill="#4CAF50" d="M24 44c5.2 0 9.9-2 13.4-5.2l-6.2-5.2C29.2 35.1 26.7 36 24 36c-5.2 0-9.6-3.3-11.3-8l-6.5 5C9.5 39.6 16.2 44 24 44z"/><path fill="#1976D2" d="M43.6 20.1H42V20H24v8h11.3c-.8 2.2-2.2 4.2-4.1 5.6l6.2 5.2C37 39.2 44 34 44 24c0-1.3-.1-2.6-.4-3.9z"/></symbol>
+ <symbol id="flame" viewBox="0 0 30 36"><path d="M15 1c2 6 8 9 8 18a8 8 0 0 1-16 0c0-4 2-6 3-8 0 3 1 5 3 6-1-6 0-11 2-16Z" fill="#d7261e"/><path d="M15 15c1 3 4 4 4 9a4 4 0 0 1-8 0c0-2 1-3 2-4 0 2 1 3 2 3-1-3 0-6 0-8Z" fill="#f2711c"/></symbol>
+</svg>
+
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#inicio"><svg class="fl"><use href="#flame"/></svg><span><b>LIMA <em>21</em></b><small><span class="pe"><i></i><i></i><i></i></span>Cafetería · Restaurante</small></span></a>
+ <a class="nav-wa" href="https://wa.me/34647036383" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#wa"/></svg></a>
+ <button class="burger" type="button" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu"><span></span></button>
+ <ul class="links" id="menu">
+  <li><a href="#favoritos">Lo que más se pide</a></li>
+  <li><a href="#carta">Carta</a></li>
+  <li><a href="#casa">El local</a></li>
+  <li><a href="#resenas">Reseñas</a></li>
+  <li><a href="#info">Horario</a></li>
+  <li><a class="cta" href="https://wa.me/34647036383" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Reservar</a></li>
+ </ul>
+</div></header>
+
+<main id="inicio">
+<section class="hero">
+ <div class="bgimg"><img src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9TNMw4Q5YDzyNJuKHmGjb6fV-3LmM5Iye7JONubj-iVqJZJpT3OcOiYhZL62gLo-H1-zpPh7czXqxhmleXj9AoR5JAtX4JjSBuvUwt8-rRfPaNNl6AxntzAkY0S1iJ4ZwNlUOQ=w1600-h1000-k-no" alt=""></div>
+ <div class="wrap">
+  <div>
+   <span class="status" id="status"><i></i>Horario</span>
+   <h1>LIMA <em>21</em><span class="hand">sabor peruano en el centro de Galapagar</span></h1>
+   <p class="lede">Ceviche recién hecho, pollo a la brasa jugoso, lomo saltado al wok y causa limeña de la de siempre. Cocina peruana tradicional, sin fusiones, en platos para gente de buen comer.</p>
+   <div class="ctas">
+    <a class="btn btn-red" href="#carta">Ver la carta →</a>
+    <a class="btn btn-wa" href="https://wa.me/34647036383?text=Hola!%20Quer%C3%ADa%20reservar%20mesa%20%F0%9F%98%8A" target="_blank" rel="noopener"><svg><use href="#wa"/></svg>Reservar mesa</a>
+   </div>
+   <div class="rate"><svg class="g-logo"><use href="#glogo"/></svg><b>4,7</b><span class="stars">★★★★★</span><span>350 reseñas en Google</span></div>
+  </div>
+  <div class="hero-art" id="heroArt">
+   <div class="plate"><img id="plateImg" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvFJCvhlv_KB1gbSgfO-NkLt0P6iqIfCzMeKIEmtil1NpBJ4K2LrdaxuYgvCfOSXY9MBmtW6p3-SZf7vNeqJuOXynF2YIfDWoeGBQCM4RqSw8Ey4dLDAJCFAiL0Ie57HblhokdKnNECf8t=w900-h900-k-no" alt="Ceviche de Lima 21" fetchpriority="high"></div>
+   <div class="plate-tag" id="plateTag"><small>de la casa</small><span>Ceviche de Javier</span></div>
+   <div class="plate-dots" id="plateDots"></div>
+  </div>
+ </div>
+ <svg class="flames" viewBox="0 0 1440 46" preserveAspectRatio="none" aria-hidden="true"><path fill="currentColor" d="M0 46V30c40-4 60-26 90-26 20 0 30 18 50 18 30 0 40-22 70-22 26 0 36 24 62 24 30 0 44-20 72-20 24 0 34 22 58 22 32 0 44-24 74-24 26 0 34 20 60 20 30 0 42-22 70-22 28 0 38 24 64 24 28 0 40-20 66-20 30 0 40 22 70 22 26 0 36-24 64-24 28 0 40 20 68 20 30 0 40-22 68-22 26 0 36 24 62 24 30 0 42-20 70-20 28 0 38 22 64 22 30 0 42-24 72-24 28 0 38 20 62 20 30 0 40-16 70-18V46Z"/></svg>
+</section>
+<div class="feria"><b>Feria de la Tapa de Galapagar</b> Este año también estamos: 7, 8 y del 12 al 15 de noviembre 🌶️</div>
+
+<section id="favoritos"><div class="wrap">
+ <span class="kicker">lo que más se pide</span>
+ <h2 class="sec-title">Los imprescindibles</h2>
+ <p class="sec-sub">Si es tu primera vez con la comida peruana, empieza por aquí. Son los platos que más se repiten en las reseñas.</p>
+ <div class="favs">
+  <article class="fav rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9RvFJCvhlv_KB1gbSgfO-NkLt0P6iqIfCzMeKIEmtil1NpBJ4K2LrdaxuYgvCfOSXY9MBmtW6p3-SZf7vNeqJuOXynF2YIfDWoeGBQCM4RqSw8Ey4dLDAJCFAiL0Ie57HblhokdKnNECf8t=w600-h800-k-no" alt="Ceviche"><span class="pr">16€</span><div class="tx"><h3>Ceviche de Javier</h3><p>Pescado y marisco marinados en limón, con su salsa especial, batata y choclo.</p><q>el ceviche Javier, espectacular</q></div></article>
+  <article class="fav rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Sgo9RB1ZiFV9OyYJNNDgeNpfzU1Laop7Y_WQj42fMqdzEHLpybr2n-oQLCi0Pa016VYreNaBfdbJk9n14AdLGJBBDa93YI4EBZ2cOugTZCG0Ei0p1bjnZAfecFmzwFFFBC5e8gjYDsiy2d=w600-h800-k-no" alt="Pollo a la brasa"><span class="pr">20€</span><div class="tx"><h3>Pollo a la brasa</h3><p>Pollo entero con patatas fritas, ensalada y nuestras cremas.</p><q>exquisito y jugoso</q></div></article>
+  <article class="fav rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9T-2l0S4HRWTvOvvLyGSb2bEEdM29npr13OC-VlxpggZ06GVuL9mvToj8uZd1oNQnm2D9SW7FHFlVwyd4Qa0Uu9srv1_VjfUNH_p3YufVv1FK4Uy8Nj-cEi4tqoT3HKBwReDQTU-vCuSLzC=w600-h800-k-no" alt="Lomo saltado"><span class="pr">12€</span><div class="tx"><h3>Lomo saltado</h3><p>Ternera salteada al wok con tomate, cebolla y soja, con patatas y arroz.</p><q>lleno de sabor</q></div></article>
+  <article class="fav rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9S7GCQ3LE7PJj_19PWOF9AjVdS295FBy12haU82aCjJI67Fhtagc-PcUERuLJU4kmXg2NKKPsDtCsy8-ErIntsupqYEVN_D35kghexMnNj_VgqC1J-H34azVxMUB_HIGDvgxW8wX7oJsKE=w600-h800-k-no" alt="Causa limeña"><span class="pr">6€</span><div class="tx"><h3>Causa limeña</h3><p>Patata amasada con ají amarillo y limón, rellena de pollo.</p><q>tradicional, sin historias modernas</q></div></article>
+ </div>
+</div></section>
+
+<section id="carta" class="sec-carta"><div class="wrap">
+ <span class="kicker">la carta</span>
+ <h2 class="sec-title">Pide para llevar o reserva</h2>
+ <p class="sec-sub">Toca <b>+</b> en lo que te apetezca y te preparamos el mensaje de WhatsApp con tu pedido. Así de fácil.</p>
+ <div class="tabs" id="tabs" role="tablist"></div>
+ <div class="menu-grid" id="menuGrid"></div>
+ <p class="menu-note">Precios orientativos según nuestra carta; pueden variar. Pregunta por el menú del día entre semana.</p>
+ <div class="order empty" id="order">
+  <div><h3 id="oTitle">Tu pedido</h3><small id="oHint">Añade platos de la carta con el botón +</small></div>
+  <div class="acts">
+   <div class="mode"><label><input type="radio" name="mode" value="para llevar" checked>Para llevar</label><label><input type="radio" name="mode" value="para comer en el local">En el local</label></div>
+   <button class="clr" id="oClear" type="button" hidden>Vaciar</button>
+   <a class="btn btn-wa" id="oSend" href="#" target="_blank" rel="noopener" aria-disabled="true"><svg><use href="#wa"/></svg>Enviar por WhatsApp</a>
+  </div>
+ </div>
+</div></section>
+
+<section id="casa"><div class="wrap">
+ <span class="kicker">te esperamos</span>
+ <h2 class="sec-title">Como en casa, pero en Galapagar</h2>
+ <p class="sec-sub">Javier y Jennifer llevan Lima 21 en familia. El local tiene dos plantas, música de fondo y siempre sitio para un grupo grande si avisas antes.</p>
+ <div class="casa">
+  <div class="big rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9SH7jpH9AT1t41irR7sgRgDuowMTQjYRhxHqgjKqJCgocGHfdWeph0n62pp4kieLhEpOqYvObiopch95VVe5O8XqhvhHMzXcv7AH8fi5ySCoclFTQxgAG3rOmYbaV-bQEwhxP0=w1000-h900-k-no" alt="Comedor de Lima 21 con planta de arriba"><span>la planta de arriba ✨</span></div>
+  <div class="side">
+   <div class="note rv-in">
+    <h3>Por qué vuelve la gente</h3>
+    <ul>
+     <li><span>🍽️</span>Platos generosos: muchos se llevan lo que sobra</li>
+     <li><span>🇵🇪</span>Cocina peruana tradicional, "como en tu país"</li>
+     <li><span>💶</span>Unos 20 € por persona comiendo y bebiendo a gusto</li>
+     <li><span>🥡</span>Pollo a la brasa y platos para llevar</li>
+    </ul>
+   </div>
+   <div class="two">
+    <div class="rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Qf1t08FcTZ_XcDYhXGK0Hk5t5JeAPoM-igl7s52HcXHz3A7BMjXJKIrZMsO0S8APF76p_SiYlxqaKsof7S6sJUD59x9d-i2aPhnyiYmM1W661W4sBxihfUsQTJb-Jot-T_Lpv2=w600-h500-k-no" alt="La barra de Lima 21"></div>
+    <div class="rv-in"><img loading="lazy" src="https://lh3.googleusercontent.com/gps-cs-s/ANWiy9Tt5q2LewvCdoGNj5gbZb7GeoLtTBYaK1-OeulHA4Gwmi9RmUXsRhb2rZ4qD3lb9p-Ykqzy2IJh4x2dtfuPnyG4XTeFa9KJ93Q3NJfSz5jGj19hVQ0a6fubdX4OFch1x_kwuN3lLqnl8CoS=w600-h500-k-no" alt="Fachada de Lima 21 en Galapagar"></div>
+   </div>
+  </div>
+ </div>
+</div></section>
+
+<section id="fotos" style="padding-top:0"><div class="wrap">
+ <div class="gal" id="gal"></div>
+</div></section>
+
+<section id="resenas" class="sec-rev"><div class="wrap">
+ <span class="kicker">reseñas reales de Google</span>
+ <h2 class="sec-title">"El mejor peruano de la zona"</h2>
+ <p class="sec-sub">Lo dicen vecinos de Galapagar y también peruanos que echan de menos su sazón.</p>
+ <div class="rv-head">
+  <div class="rv-score"><svg class="g-logo" style="width:34px;height:34px"><use href="#glogo"/></svg><b>4,7</b><div><span class="stars">★★★★★</span><small>350 reseñas en Google</small></div></div>
+  <div class="rv-chips"><button class="chip on" data-f="">Todas</button><button class="chip" data-f="ceviche|leche de tigre">Ceviche</button><button class="chip" data-f="pollo">Pollo a la brasa</button><button class="chip" data-f="peru|perú|país|sazón">Lo dicen peruanos 🇵🇪</button><button class="chip" data-f="atent|atención|víctor|génesis|camarer">El trato</button></div>
+ </div>
+ <div class="rv-track" id="rvTrack"></div>
+ <div class="rv-nav"><div class="dots" id="rvDots"></div><div class="arrows"><button id="rvPrev" aria-label="Anterior">←</button><button id="rvNext" aria-label="Siguiente">→</button></div></div>
+ <div class="rv-links"><a href="https://search.google.com/local/reviews?placeid=ChIJYR8zOZJ1QQ0RBZaIWFlmfAw" target="_blank" rel="noopener">Ver todas las reseñas en Google →</a><a href="https://search.google.com/local/writereview?placeid=ChIJYR8zOZJ1QQ0RBZaIWFlmfAw" target="_blank" rel="noopener">Déjanos tu reseña ★</a></div>
+</div></section>
+
+<section id="info"><div class="wrap">
+ <span class="kicker">ven a vernos</span>
+ <h2 class="sec-title">Horario y dónde estamos</h2>
+ <div class="info-grid">
+  <div class="card rv-in">
+   <table class="hours"><tbody>
+    <tr><td>Lunes</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+    <tr><td>Martes</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+    <tr class="off"><td>Miércoles</td><td>Cerrado</td></tr>
+    <tr><td>Jueves</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+    <tr><td>Viernes</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+    <tr><td>Sábado</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+    <tr><td>Domingo</td><td>10:00–17:00 · 19:00–23:00</td></tr>
+   </tbody></table>
+  </div>
+  <div class="card rv-in">
+   <ul class="contact-list">
+    <li><span class="ic">📍</span><div><small>Dirección</small><a href="https://www.google.com/maps/search/?api=1&query=Lima%2021%20Galapagar&query_place_id=ChIJYR8zOZJ1QQ0RBZaIWFlmfAw" target="_blank" rel="noopener">C/ del Caño, 13 · Galapagar</a></div></li>
+    <li><span class="ic">💬</span><div><small>Reservas y pedidos por WhatsApp</small><a href="https://wa.me/34647036383" target="_blank" rel="noopener">647 03 63 83</a></div></li>
+    <li><span class="ic">🍗</span><div><small>Para llevar</small><span>Pollo a la brasa, broaster y platos de la carta</span></div></li>
+   </ul>
+   <div class="map"><iframe loading="lazy" title="Mapa de Lima 21" src="https://maps.google.com/maps?q=40.5773161,-4.004488&z=17&output=embed"></iframe></div>
+  </div>
+ </div>
+</div></section>
+
+<section class="cta-band"><div class="wrap">
+ <h2>¿Te apetece un ceviche?</h2>
+ <span class="hand">o un pollito a la brasa para llevar a casa</span>
+ <div class="ctas">
+  <a class="btn btn-white" href="#carta">Hacer mi pedido →</a>
+  <a class="btn btn-ghost" href="https://wa.me/34647036383?text=Hola!%20Quer%C3%ADa%20reservar%20mesa%20%F0%9F%98%8A" target="_blank" rel="noopener">Reservar mesa</a>
+ </div>
+</div></section>
+</main>
+
+<footer><div class="wrap"><span>© Lima 21 Cafetería Restaurante · C/ del Caño 13, Galapagar (Madrid)</span><span>Web hecha por <a href="https://lacedev.com" target="_blank" rel="noopener">Lace</a></span></div></footer>
+
+<a class="fab" id="fab" href="https://wa.me/34647036383" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp"><svg><use href="#wa"/></svg></a>
+
+<div class="lb" id="lb"><img alt=""><button class="x" aria-label="Cerrar">×</button><button class="pv" aria-label="Anterior">‹</button><button class="nx" aria-label="Siguiente">›</button></div>
+
+<script>
+window.WA='34647036383';
+const G='https://lh3.googleusercontent.com/gps-cs-s/';
+window.PH={
+ ceviche:G+'ANWiy9RvFJCvhlv_KB1gbSgfO-NkLt0P6iqIfCzMeKIEmtil1NpBJ4K2LrdaxuYgvCfOSXY9MBmtW6p3-SZf7vNeqJuOXynF2YIfDWoeGBQCM4RqSw8Ey4dLDAJCFAiL0Ie57HblhokdKnNECf8t',
+ pollo:G+'ANWiy9Sgo9RB1ZiFV9OyYJNNDgeNpfzU1Laop7Y_WQj42fMqdzEHLpybr2n-oQLCi0Pa016VYreNaBfdbJk9n14AdLGJBBDa93YI4EBZ2cOugTZCG0Ei0p1bjnZAfecFmzwFFFBC5e8gjYDsiy2d',
+ leche:G+'ANWiy9SxVaNCrHH3nc_8o-5ec60V_UrMawTur_mBLmIW3D-LYrOCHyzx3wC_vyAyK7GXG8_Yw_BbjVylDzBYQTvMVO2Gzd9w2nBPisCNYUIpEVDebycaNN-Hy8kcQRZBJg0G1njkDqov5_189CXG',
+ causa:G+'ANWiy9S7GCQ3LE7PJj_19PWOF9AjVdS295FBy12haU82aCjJI67Fhtagc-PcUERuLJU4kmXg2NKKPsDtCsy8-ErIntsupqYEVN_D35kghexMnNj_VgqC1J-H34azVxMUB_HIGDvgxW8wX7oJsKE',
+ aji:G+'ANWiy9QGMvY495S5zP8UgvUg1QMSro3_OQaNR5-Vtj5ozgzObi_3cL0TP4I3Vqy9B4x1DP2n9nZk9uTZW-U9ZQEiaIPFUR2YEbu3vrWPAvxUkYlrAjwhunDOQ9zecnISdcvBo4a-D1xJvtv0Y18',
+ lomo:G+'ANWiy9T-2l0S4HRWTvOvvLyGSb2bEEdM29npr13OC-VlxpggZ06GVuL9mvToj8uZd1oNQnm2D9SW7FHFlVwyd4Qa0Uu9srv1_VjfUNH_p3YufVv1FK4Uy8Nj-cEi4tqoT3HKBwReDQTU-vCuSLzC',
+ chaufa:G+'ANWiy9RFsrtawgbwMqH5qOrvZdCV95BLsXljYHrYXi1yt9cnkCkl9KeK9848yqMYc9vqg1ATaKA20OZblxiOZDYuTF2p_jPMisDlR_rncobkxs1Uexl3fHaLnEOOjzPexTKp-B7ES7Ad-g',
+ tacu:G+'ANWiy9QFvMOJbXPA3XZGwu5D1mkWUbRwmmMN46D_wYWLAHZZa8thKxjRZeC69B9mnrbvO0FCpCRhAHlvts5h71WayF8lmM5NQV7jXvHxR_Eer3UObqIZq5Z4EAYZgg2nCmxX488aoQVAMCD2dG4',
+ yuca:G+'ANWiy9St8h5mjUQlwwkEpr1oi4G3LX_u5FRMhkiWs--06gf7nzIver7TZEeNtaWJWi196UA8HKYGZqt0waMiTMaDRXXSUQt6mxoUrRJS_2TC-e5ZzpZdeS1wTCG4yX5BlhLE-cCpC2DCmg85gdDX',
+ tresleches:G+'ANWiy9RFu68gHXa4aa1_xdQsvH_J9-rRt3FO5o1xLrxA7lSA35pa5EAlORaaWz-P72M4q_Cq_6Io4_VNOXsgZl0ri-QbDWYEpqlUoYHTe-CnxJb8B0PNJ43m22avTXYZrhchnt5An6CoYCvtTVWY',
+ choco:G+'ANWiy9R9Y4Uk1zlLHz4KwsXqU-fdidHS9pN38gFkf2A7rhfEhBINkfd1EcB9TOUOLL6bBusj5dSn4dnR-KdTzkg1XAN4MvDQ_-8LRbVpd32-gq2-yNtqTy7TbpVvMX_bVd6K2aQ7S6OsNzlX42Ss',
+ caldo:G+'ANWiy9RN6uFoPFVpCDWpbEUTPsVzdQLegEi-QsPDZ_O1Zn1RX30RRPPJPY1RaMBADIbBMLCNYl_Qd7_uOQB_FR-BbOWh84oRuCTQM9Xog92CKF925mXrQ4cowoGf3me_p3Vk0FzSpJ82F2reUBlX',
+ arroz:G+'ANWiy9R9czTMUf_1r8Y9e4nWuQo680jF7GcLqj_KTkTDOKkkBtJYL1rnX6hUjwDxYcDl0HQPIk34CuBHmcyaxBEBSSqCCflVU6BfhTw8QRapSBrd8kasyXhaAHppRoIprSVURpP03kmLvICapoCJ'
+};
+window.HERO=[
+ {p:'ceviche',k:'de la casa',n:'Ceviche de Javier'},
+ {p:'pollo',k:'el clásico',n:'Pollo a la brasa'},
+ {p:'lomo',k:'al wok',n:'Lomo saltado'},
+ {p:'leche',k:'para despertar',n:'Leche de tigre'},
+ {p:'tresleches',k:'de postre',n:'Tarta tres leches'}
+];
+window.MENU=[
+ {t:'Entradas',i:[['Causa limeña',6,'Patata amasada con ají amarillo, limón y aceite, rellena de pollo con guisantes y mayonesa.'],['Causa de gambas',8,'Patata con ají amarillo y limón, rellena de gambas y mayonesa.'],['Papa a la huancaína',6,'Patatas en rodajas con salsa de leche, galleta salada y ají amarillo.'],['Ocopa',6,'Patatas en rodajas con salsa de galleta, cacahuete, queso, ají amarillo y huacatay.'],['Tamal (pollo o cerdo)',6,'Masa de maíz amarillo con especias, aceituna, huevo y sarsa criolla.'],['Yucas con salsa huancaína',6,'Yucas fritas acompañadas de salsa a la huancaína.'],['Papa rellena',6,'Patata prensada rellena de carne molida, huevo y aceituna, con sarsa criolla.'],['Aguadito',6,'Consomé de pollo con arroz, verduras, aderezo de la casa y culantro.']]},
+ {t:'Ceviches',i:[['Ceviche de Javier',16,'Pescado y mariscos marinados con limón, especias y salsa especial, con batata, choclo y maíz tostado.'],['Ceviche de pescado',12.5,'Pescado marinado con limón y salsa acevichada, con batata, choclo y maíz tostado.'],['Ceviche mixto',14.5,'Pescado y mariscos marinados con limón y salsa acevichada.'],['Leche de tigre',10,'Salsa acevichada con trozos de pescado y cebolla, coronada con gamba.'],['Leche de tigre mixto',12,'Salsa acevichada con pescado y mariscos, coronada con gamba.'],['Causa acevichada',12,'Causa de ají amarillo coronada con pescado y salsa acevichada.']]},
+ {t:'Pollos a la brasa',i:[['Pollo completo',20,'Pollo entero con patatas fritas, ensalada con vinagreta y cremas.'],['1/2 pollo completo',12,'Medio pollo con 1/2 de patatas, 1/2 de ensalada y crema.'],['1/4 de pollo',7,'Con patatas fritas, ensalada con vinagreta y crema.'],['Mostrito peruano',10,'1/4 de pollo con patatas fritas y arroz chaufa.'],['Salchipollo',10,'1/4 de pollo con patatas fritas, salchichas y cremas.'],['Salchipapas',5,'Patatas fritas con salchichas y cremas.'],['Broaster 2 piezas',7,'Con patatas fritas y ensalada.'],['Broaster 3 piezas',9,'Con patatas fritas y ensalada.']]},
+ {t:'Segundos',i:[['Lomo saltado',12,'Ternera, tomate y cebolla salteados al wok con soja, con patatas fritas y arroz.'],['Arroz chaufa de pollo',10,'Arroz salteado al wok con tortilla, cebolleta y soja.'],['Arroz chaufa de ternera',12,'Arroz salteado al wok con ternera, tortilla y cebolleta.'],['Arroz chaufa mixto',13,'Con pollo, ternera y salsa de soja.'],['Arroz chaufa de mariscos',14,'Con mixtura de mariscos y salsa de soja.'],['Tallarín saltado de ternera',12,'Tallarines salteados al wok con ternera y verduras.'],['Tallarín saltado de mariscos',14,'Tallarines salteados con mariscos y salsa de soja.'],['Ají de gallina',10,'Pollo desmenuzado en salsa de ají amarillo, con patata, huevo, aceituna y arroz.'],['Anticucho con rachi',11,'Corazón de ternera y librillo a la plancha con ají panca, patata y choclo.'],['Anticuchos',10,'Corazón de ternera con especias y ají panca a la plancha, con patata y choclo.']]},
+ {t:'Fines de semana',i:[['Caldo de mote',8,'El caldo de los fines de semana, de los que piden repetir.'],['Caldo de gallina',7,'Caldo casero de gallina.'],['Chicharrón de pescado',14,'Pescado enharinado y frito con yuca frita y sarsa criolla.'],['Chicharrón mixto',16,'Pescado y mariscos fritos con yuca y sarsa criolla.'],['Seco de ternera con frejoles',12,'Guiso de ternera con frejoles.'],['Arroz con pollo',12,'Arroz verde con cilantro, ají amarillo y panca, con huancaína y sarsa criolla.'],['Arroz con mariscos',16,'Arroz meloso con mariscos, ají amarillo, ají panca y vino blanco.'],['Arroz con pato',17,'Pato con arroz al cilantro, cerveza, ají amarillo y zapallo loche.'],['Tacu tacu con lomo saltado',14,'Arroz con frejoles aderezados, con lomo saltado por encima.'],['Dúo marino (a elegir 2)',16,''],['Trío marino (a elegir 3)',25,'']]},
+ {t:'Postres',i:[['Tarta tres leches',4,'La que todos recomiendan.'],['Tarta de chocolate',4,''],['Tarta de dulce de leche',4,''],['Tarta helada',4,''],['Crema volteada',3.5,'El flan peruano.'],['Alfajores',1.5,'']]}
+];
+window.HOURS=[["10:00-17:00","19:00-23:00"],["10:00-17:00","19:00-23:00"],[],["10:00-17:00","19:00-23:00"],["10:00-17:00","19:00-23:00"],["10:00-17:00","19:00-23:00"],["10:00-17:00","19:00-23:00"]];
+window.GAL=[['ceviche','Ceviche'],['pollo','Pollo a la brasa'],['leche','Leche de tigre'],['causa','Causa limeña'],['aji','Ají de gallina'],['tacu','Tacu tacu con lomo saltado'],['yuca','Yucas con huancaína'],['chaufa','Tallarín saltado'],['caldo','Caldo de los fines de semana'],['tresleches','Tarta tres leches'],['choco','Tarta de chocolate'],['arroz','Arroz de la casa']];
+window.REVIEWS=[
+ {n:"Jesus Blazquez",s:5,d:"Hace 8 meses",t:"Hoy hemos tenido el placer de comer en este restaurante peruano y la experiencia no ha podido ser mejor. Probamos el lomo salteado y la ocopa, y ambos platos estaban absolutamente deliciosos, llenos de sabor y perfectamente preparados. El servicio fue otro punto fuerte: todo llegó rapidísimo a la mesa y el trato fue cercano y profesional. Mención especial a Víctor, nuestro camarero."},
+ {n:"Camila villamizar",s:5,d:"Hace 10 meses",t:"Si no saben a dónde ir les súper recomiendo al 100% Lima 21, es el mejor restaurante de toda la zona. La comida es deliciosa y su personal muy atento y amable, en especial la camarera Génesis. La comida sale súper rápido, es muy abundante y los precios son muy accesibles. 💕"},
+ {n:"Ramon Sanchez",s:5,d:"Hace 2 meses",t:"Una gema escondida en el centro de Galapagar. Tanto es así que nos ha llevado 2 años descubrirla. Platos auténticos y generosos, con sabor, muy elaborados y bien presentados. 2 ceviches y un arroz... Cuesta elegir el mejor plato."},
+ {n:"Federico F",s:5,d:"Hace 2 meses",t:"Fuimos a cenar por recomendación de un amigo y fue todo un acierto. Un ceviche exquisito a un precio muy razonable. Son platos para gente de buen comer: tuvimos que pedir parte de lo que nos sobró para llevar."},
+ {n:"Alejandra Aguirre Merino",s:5,d:"Hace un mes",t:"Servicio excelente, ¡el ceviche de la casa espectacular! El ají de rocoto riquísimo, todo muy bueno. ¡Muy recomendado!"},
+ {n:"Mariana Goncalves",s:5,d:"Hace 8 meses",t:"Súper rico: el arroz chaufa, el pollo y la tarta tres leches, todo un 10/10. La atención muy buena, nos atendió Víctor, súper atento y agradable. Definitivamente volveré ✨"},
+ {n:"alessandro regoli",s:5,d:"Hace 5 meses",t:"Muy buena experiencia. Restaurante de conducción familiar. Todos sonrientes. Ambiente bueno y comida buena. Lejos de la fusión gourmet que va de moda ahora. Original. Como debe ser."},
+ {n:"Luis Miguel Pacheco Donayre",s:5,d:"Hace un año",t:"¡Comida peruana estupenda! La causa está muy buena. Tradicional, sin palta ni historias modernas. Tradición con sabor peruano. Recomendable al 100%."},
+ {n:"Hazel Bottger",s:5,d:"Hace 10 meses",t:"¡Nos encantó! La atención muy buena, la comida muy rica y bien servida, como nos gusta a los peruanos 🤗 Volveremos 💯"},
+ {n:"Andrea Fernandez Nielfa",s:5,d:"Hace 8 meses",t:"Hemos estado cenando un grupo muy grande. La atención ha sido maravillosa. La comida está buenísima, cantidades grandes y todo muy sabroso. El precio también muy bueno: unos 20 por persona comiendo y bebiendo a gusto. ¡Volveremos!"},
+ {n:"Jose Martínez",s:5,d:"Hace un año",t:"Excelente todo lo que venden, el ceviche de leche de tigre es lo mejor. ¡Y qué decir del pollo a la brasa, su pollero tiene el tino! 🤤"},
+ {n:"Stefanny C.G.",s:5,d:"Hace un año",t:"Fuimos a comer este sábado previa reserva y la comida y la atención fueron excelentes. Pedimos caldo de mote (buenísimo), pollo a la brasa, lomo saltado y rachi. Nos pusieron en la planta de arriba y se está genial. ¡Repetiremos seguro! 😄"},
+ {n:"Rut Gomez Vazquez",s:5,d:"Hace 4 meses",t:"Hemos venido de casualidad y volveremos. Buenísima la comida y el precio. La yuca perfecta, nada grasa. Un local muy alegre y el personal excelente. 5 meses después: venimos una vez al mes. Nos encanta."},
+ {n:"lito1206",s:5,d:"Hace 10 meses",t:"Recomiendo 100% este restaurante, sales muy satisfecho comiendo rico y bien servido. Soy peruano y mi esposa de Kazajistán, y es su restaurante favorito. Gracias por tu excelente servicio."},
+ {n:"Enrique Hidalgo Martin",s:5,d:"Hace un año",t:"Excelente relación calidad/precio. Atención inmejorable. El pisco sour, un escándalo de lo bueno que está. Muy recomendable si vives en la sierra de Madrid."},
+ {n:"Miryan Jovel Salas",s:5,d:"Hace un mes",t:"El lugar es acogedor con un ambiente tranquilo, el servicio excelente y ni qué decir de la comida: en este restaurante probé por primera vez la comida peruana y es riquísima. Felicitaciones."}
+];
+</script>
+<script>
+(function(){
+const $=(s,c=document)=>c.querySelector(s),$$=(s,c=document)=>[...c.querySelectorAll(s)];
+const IMG=(k,w,h)=>window.PH[k]+'=w'+w+'-h'+h+'-k-no';
+const eur=v=>(Number.isInteger(v)?v:v.toFixed(2).replace('.',','))+'€';
+
+/* menú móvil */
+const bg=$('.burger'),ln=$('.links');
+const close=()=>{ln.classList.remove('open');bg.setAttribute('aria-expanded',false);bg.setAttribute('aria-label','Abrir menú')};
+bg.addEventListener('click',()=>{const o=ln.classList.toggle('open');bg.setAttribute('aria-expanded',o);bg.setAttribute('aria-label',o?'Cerrar menú':'Abrir menú')});
+$$('.links a').forEach(a=>a.addEventListener('click',close));
+document.addEventListener('click',e=>{if(!e.target.closest('.nav'))close()});
+
+/* apariciones */
+if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('vis');io.unobserve(e.target)}}),{threshold:.12});$$('.rv-in').forEach(el=>io.observe(el));}
+setTimeout(()=>$$('.rv-in').forEach(e=>e.classList.add('vis')),2200);
+
+/* abierto ahora */
+function madrid(){const p=new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',weekday:'short',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date());const g=t=>p.find(x=>x.type==t).value;const wd=['lun','mar','mié','jue','vie','sáb','dom'].indexOf(g('weekday').replace('.','').toLowerCase());return{d:wd<0?(new Date().getDay()+6)%7:wd,m:(+g('hour')%24)*60+(+g('minute'))}}
+const toM=s=>{const[h,m]=s.split(':').map(Number);return h*60+m};
+const H=window.HOURS,n=madrid();let open=null,next=null;
+for(const r of H[n.d]){const[a,b]=r.split('-');if(n.m>=toM(a)&&n.m<toM(b))open=b;if(!next&&n.m<toM(a))next=a}
+let nextTxt=next?'abre a las '+next:'';
+if(!nextTxt){let d=(n.d+1)%7,c=0;while(!H[d].length&&c<7){d=(d+1)%7;c++}nextTxt=(d==(n.d+1)%7?'mañana':'el '+['lunes','martes','miércoles','jueves','viernes','sábado','domingo'][d])+' desde las '+H[d][0].split('-')[0]}
+const st=$('#status');st.className='status '+(open?'open':'closed');
+st.innerHTML='<i></i>'+(open?'Abierto ahora · hasta las '+open:'Cerrado ahora · '+nextTxt);
+const tr=$$('.hours tr')[n.d];if(tr)tr.classList.add('today');
+
+/* plato del hero */
+const HE=window.HERO,pi=$('#plateImg'),pt=$('#plateTag'),pd=$('#plateDots');let hk=0;
+pd.innerHTML=HE.map((_,i)=>`<button type="button" aria-label="Ver ${HE[i].n}"${i?'':' class="on"'}></button>`).join('');
+HE.forEach(h=>{const im=new Image();im.src=IMG(h.p,900,900)});
+function hero(i){hk=(i+HE.length)%HE.length;pi.style.opacity=0;setTimeout(()=>{pi.src=IMG(HE[hk].p,900,900);pi.alt=HE[hk].n;pt.innerHTML=`<small>${HE[hk].k}</small><span>${HE[hk].n}</span>`;pi.style.opacity=1},300);$$('button',pd).forEach((b,j)=>b.classList.toggle('on',j==hk))}
+$$('button',pd).forEach((b,i)=>b.onclick=()=>{hero(i);clearInterval(ht)});
+const ht=setInterval(()=>{if(!document.hidden)hero(hk+1)},4200);
+
+/* carta + pedido */
+const M=window.MENU,tabs=$('#tabs'),mg=$('#menuGrid'),q={};let cur=0;
+const key=(c,i)=>c+'-'+i;
+function drawTabs(){tabs.innerHTML=M.map((c,i)=>{const k=Object.keys(q).filter(x=>x.startsWith(i+'-')).reduce((a,x)=>a+q[x],0);return `<button class="tab${i==cur?' on':''}" role="tab" data-i="${i}">${c.t}${k?`<small>· ${k}</small>`:''}</button>`}).join('')}
+function drawMenu(){mg.innerHTML=M[cur].i.map((it,j)=>{const k=key(cur,j),c=q[k]||0;return `<div class="it${c?' inq':''}" data-k="${k}"><div><h4>${it[0]}<span class="q">×${c}</span></h4>${it[2]?`<p>${it[2]}</p>`:''}</div><span class="pr">${eur(it[1])}</span><div class="ctl"><button class="sub" type="button" aria-label="Quitar ${it[0]}">−</button><button class="add" type="button" aria-label="Añadir ${it[0]}">+</button></div></div>`}).join('')}
+tabs.addEventListener('click',e=>{const b=e.target.closest('.tab');if(!b)return;cur=+b.dataset.i;drawTabs();drawMenu()});
+mg.addEventListener('click',e=>{const b=e.target.closest('.add,.sub');if(!b)return;const k=b.closest('.it').dataset.k;q[k]=Math.max(0,(q[k]||0)+(b.classList.contains('add')?1:-1));if(!q[k])delete q[k];drawTabs();drawMenu();renderOrder()});
+function lines(){return Object.keys(q).filter(k=>q[k]).map(k=>{const[c,i]=k.split('-').map(Number);const it=M[c].i[i];return{n:it[0],p:it[1],c:q[k]}})}
+function renderOrder(){const L=lines(),units=L.reduce((a,l)=>a+l.c,0),tot=L.reduce((a,l)=>a+l.p*l.c,0);
+ const o=$('#order');o.classList.toggle('empty',!units);
+ $('#oTitle').textContent=units?`Tu pedido · ${eur(Math.round(tot*100)/100)}`:'Tu pedido';
+ $('#oHint').textContent=units?L.map(l=>`${l.c}× ${l.n}`).join(', '):'Añade platos de la carta con el botón +';
+ $('#oClear').hidden=!units;
+ const mode=$('input[name=mode]:checked').value;
+ const msg=`¡Hola! 😊 Quería hacer un pedido ${mode}:\n`+L.map(l=>`- ${l.c}× ${l.n}`).join('\n')+`\nTotal aprox.: ${eur(Math.round(tot*100)/100)}\n¿Para qué hora lo podríais tener? ¡Gracias!`;
+ const s=$('#oSend');s.setAttribute('aria-disabled',units?'false':'true');s.href=units?'https://wa.me/'+window.WA+'?text='+encodeURIComponent(msg):'#';
+}
+$('#oClear').onclick=()=>{for(const k in q)delete q[k];drawTabs();drawMenu();renderOrder()};
+$$('input[name=mode]').forEach(r=>r.onchange=renderOrder);
+$('#oSend').addEventListener('click',e=>{if($('#oSend').getAttribute('aria-disabled')=='true')e.preventDefault()});
+drawTabs();drawMenu();renderOrder();
+if('IntersectionObserver' in window){new IntersectionObserver(es=>es.forEach(e=>$('#fab').classList.toggle('off',e.isIntersecting)),{threshold:.05}).observe($('#carta'));}
+
+/* galería */
+const gal=$('#gal');gal.innerHTML=window.GAL.map(([k,a],i)=>`<button type="button" data-big="${IMG(k,1400,1400)}"><img loading="lazy" src="${IMG(k,i==0?800:500,i==0?800:400)}" alt="${a}"></button>`).join('');
+const gl=$$('.gal button'),lb=$('#lb'),im=$('img',lb);let gk=0;
+const show=i=>{gk=(i+gl.length)%gl.length;im.src=gl[gk].dataset.big;im.alt=$('img',gl[gk]).alt;lb.classList.add('on')};
+gl.forEach((b,i)=>b.onclick=()=>show(i));$('.x',lb).onclick=()=>lb.classList.remove('on');$('.pv',lb).onclick=e=>{e.stopPropagation();show(gk-1)};$('.nx',lb).onclick=e=>{e.stopPropagation();show(gk+1)};
+lb.onclick=e=>{if(e.target==lb)lb.classList.remove('on')};
+document.addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key=='Escape')lb.classList.remove('on');if(e.key=='ArrowLeft')show(gk-1);if(e.key=='ArrowRight')show(gk+1)});
+let tx=0;lb.addEventListener('touchstart',e=>tx=e.touches[0].clientX,{passive:true});lb.addEventListener('touchend',e=>{const d=e.changedTouches[0].clientX-tx;if(Math.abs(d)>50)show(gk+(d<0?1:-1))});
+
+/* reseñas */
+const R=window.REVIEWS,tk=$('#rvTrack');const cols=['#d7261e','#f2711c','#2f7d4f','#c8901a','#7c3aed','#0e7490'];
+tk.innerHTML=R.map((r,i)=>`<article class="rv" data-k="${r.t.toLowerCase()}"><div class="rv-top"><span class="av" style="background:${cols[i%cols.length]}">${r.n.trim()[0].toUpperCase()}</span><div><strong>${r.n}</strong><small>${r.d}</small></div><svg class="g-logo"><use href="#glogo"/></svg></div><span class="stars">${'★'.repeat(r.s)}</span><p>${r.t}</p><button class="more" type="button">Leer más</button></article>`).join('');
+$$('.rv',tk).forEach(c=>{const p=$('p',c),b=$('.more',c);requestAnimationFrame(()=>{if(p.scrollHeight<=p.clientHeight+2)b.style.display='none'});b.onclick=()=>{c.classList.toggle('open');b.textContent=c.classList.contains('open')?'Leer menos':'Leer más'}});
+const dots=$('#rvDots'),vis=()=>$$('.rv:not(.hide)',tk);
+function upd(){const v=vis();let idx=0,best=1e9;v.forEach((c,i)=>{const d=Math.abs(c.offsetLeft-tk.scrollLeft-tk.offsetLeft);if(d<best){best=d;idx=i}});$$('i',dots).forEach((d,i)=>d.classList.toggle('on',i==idx))}
+function mkDots(){dots.innerHTML=vis().map(()=>'<i></i>').join('');upd()}
+tk.addEventListener('scroll',()=>requestAnimationFrame(upd));
+$('#rvPrev').onclick=()=>tk.scrollBy({left:-tk.clientWidth*.8,behavior:'smooth'});
+$('#rvNext').onclick=()=>tk.scrollBy({left:tk.clientWidth*.8,behavior:'smooth'});
+$$('.rv-chips .chip').forEach(ch=>ch.onclick=()=>{$$('.rv-chips .chip').forEach(x=>x.classList.remove('on'));ch.classList.add('on');const f=ch.dataset.f;$$('.rv',tk).forEach(c=>c.classList.toggle('hide',!!f&&!f.split('|').some(w=>c.dataset.k.includes(w))));tk.scrollTo({left:0});mkDots()});
+let down=false,sx=0,sl=0;tk.addEventListener('mousedown',e=>{down=true;sx=e.pageX;sl=tk.scrollLeft;tk.style.scrollSnapType='none'});window.addEventListener('mouseup',()=>{if(down){down=false;tk.style.scrollSnapType=''}});tk.addEventListener('mousemove',e=>{if(down){e.preventDefault();tk.scrollLeft=sl-(e.pageX-sx)}});
+const auto=setInterval(()=>{if(document.hidden)return;const max=tk.scrollWidth-tk.clientWidth;if(tk.scrollLeft>=max-5)tk.scrollTo({left:0,behavior:'smooth'});else{const c=tk.querySelector('.rv:not(.hide)');if(c)tk.scrollBy({left:c.offsetWidth+16,behavior:'smooth'})}},5500);
+['pointerdown','wheel','touchstart'].forEach(ev=>tk.addEventListener(ev,()=>clearInterval(auto),{passive:true}));
+mkDots();
+})();
+</script>
+</body></html>
